@@ -12,22 +12,32 @@
             <h1>Tyler Lubeck</h1>
         </div>
         <!-- Nav bar -->
-        <nav class="top-bar" data-topbar>
-            <ul class="title-area">
-                <li class="name">
-                    <h1><a href="">Home</a></h1>
-                </li>
-                <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-            </ul>
-            <section class="top-bar-section">
-                <ul class="left">
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+        <div class="contain-to-grid">
+            <nav class="top-bar" data-topbar>
+                <ul class="title-area">
+                    <li class="name"></li>
+                    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
                 </ul>
-            </section>
-        </nav>
-
+                <section class="top-bar-section">
+                    <ul class="left">
+                        <li><a href="">Home</a></li>
+                        <li class="divider"></li>
+                        <li class="has-dropdown">
+                            <a href="projects.html">Projects</a>
+                            <ul class="dropdown">
+                                <li><a href="projects.html#HalliganHelper">Halligan Helper</a></li>
+                                <li><a href="projects.html#FacebookCleanup">Facebook Cleanup</a></li>
+                            </ul>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="resume.html">Resum&egrave;</a></li>
+                        <li class="divider"></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
+        
         <!-- Body content goes here -->
         <div class="row">
             <div class="small-4 columns">
@@ -45,7 +55,7 @@
             
         <!-- Footer scripts -->    
         <script src='static/js/vendor/jquery.js'></script>
-        <script src='static/js/vendor/foundation.min.js'></script>
+        <script src='static/js/foundation.min.js'></script>
 <!--        <script src='static/js/vendor/modernizr.js'></script> -->
         <script>
             $(document).foundation();

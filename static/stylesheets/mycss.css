@@ -1,0 +1,52 @@
+nav {
+    margin-bottom: 1em !important;
+}
+
+/* Blue-Black Gradient */
+/*
+body {
+background: #0c0549;
+
+background: -moz-linear-gradient(left,  #0c0549 10%, #000000 51%, #0c0549 90%);
+
+background: -webkit-gradient(linear, left top, right top, color-stop(10%,#0c0549), color-stop(51%,#000000), color-stop(90%,#0c0549));
+
+background: -webkit-linear-gradient(left,  #0c0549 10%,#000000 51%,#0c0549 90%);
+
+background: -o-linear-gradient(left,  #0c0549 10%,#000000 51%,#0c0549 90%);
+
+background: -ms-linear-gradient(left,  #0c0549 10%,#000000 51%,#0c0549 90%);
+
+background: linear-gradient(to right,  #0c0549 10%,#000000 51%,#0c0549 90%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c0549', endColorstr='#0c0549',GradientType=1 );
+
+
+}
+*/
+
+/* Carbon Background */
+body {
+background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+}
+
+.row {
+//    background-color: white !important;
+    color: white !important;
+}
+
+h1 {
+    color: white !important;
+}
+
+img {
+    border-radius: 25px;
+}

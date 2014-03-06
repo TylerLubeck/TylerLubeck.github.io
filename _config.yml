@@ -1,0 +1,4 @@
+auto: true
+timezone: America/New_York
+include: [static]
+

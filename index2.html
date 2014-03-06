@@ -2,10 +2,10 @@
 <html>
     <head>
         <title> Tyler Lubeck </title>
-        <link rel='stylesheet' href='static/stylesheets/normalize.css'/>
-        <link rel='stylesheet' href='static/stylesheets/foundation.min.css'/>
-        <link rel='stylesheet' href='static/stylesheets/mycss.css'/>
-        <script src='static/js/vendor/modernizr.js'></script>
+        <link rel='stylesheet' href='/static/stylesheets/normalize.css'/>
+        <link rel='stylesheet' href='/static/stylesheets/foundation.min.css'/>
+        <link rel='stylesheet' href='/static/stylesheets/mycss.css'/>
+        <script src='/static/js/vendor/modernizr.js'></script>
     </head>
     <body>
         <div class="row text-center header">
@@ -20,7 +20,7 @@
                 </ul>
                 <section class="top-bar-section">
                     <ul class="left">
-                        <li><a href="">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li class="divider"></li>
                         <li class="has-dropdown">
                             <a href="projects.html">Projects</a>
@@ -38,7 +38,7 @@
             </nav>
         </div>
         <!-- Body content goes here -->
-
+        {{ content }}
 
         <!-- Footer scripts -->    
         <script src='static/js/vendor/jquery.js'></script>

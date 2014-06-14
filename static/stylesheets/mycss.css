@@ -2,28 +2,6 @@ nav {
     margin-bottom: 1em !important;
 }
 
-/* Blue-Black Gradient */
-/*
-body {
-background: #0c0549;
-
-background: -moz-linear-gradient(left,  #0c0549 10%, #000000 51%, #0c0549 90%);
-
-background: -webkit-gradient(linear, left top, right top, color-stop(10%,#0c0549), color-stop(51%,#000000), color-stop(90%,#0c0549));
-
-background: -webkit-linear-gradient(left,  #0c0549 10%,#000000 51%,#0c0549 90%);
-
-background: -o-linear-gradient(left,  #0c0549 10%,#000000 51%,#0c0549 90%);
-
-background: -ms-linear-gradient(left,  #0c0549 10%,#000000 51%,#0c0549 90%);
-
-background: linear-gradient(to right,  #0c0549 10%,#000000 51%,#0c0549 90%);
-
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c0549', endColorstr='#0c0549',GradientType=1 );
-
-
-}
-*/
 
 /* Carbon Background */
 body {
@@ -43,10 +21,28 @@ background-size: 20px 20px;
     color: white !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: white !important;
+.circular {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url("/static/images/headshot.jpg") no-repeat;
+    box-shadow: 0 0 8px rgba(255, 255, 255, .8);
+    -webkit-box-shadow: 0 0 8px rgba(255, 255, 255, .8);
+    -moz-box-shadow: 0 0 8px rgba(255, 255, 255, .8);
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
-img {
-    border-radius: 25px;
+.circular span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.mobile-nav {
+    font-size: 250%;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

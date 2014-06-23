@@ -1,52 +1,32 @@
-<!doctype html>
-<html>
-    <head>
-        <title> Tyler Lubeck </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel='stylesheet' href='/static/stylesheets/normalize.css'/>
-        <link rel='stylesheet' href='/static/stylesheets/foundation.min.css'/>
-        <link rel='stylesheet' href='/static/stylesheets/mycss.css'/>
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <script src='/static/js/vendor/modernizr.js'></script>
-    </head>
-    <body>
-    <div class="hide-for-large-up">
-        <div class="row ">
-            <div class="circular small-centered columns" id="headshot">
-            </div>
-        </div>
-        <div class="row ">
-            <div class="small-3 text-center small-centered columns mobile-nav">
-                <a href="#"><h2>About</h2></a>
-            </div>
-        </div>
-        <div class="row ">
-            <div class="small-3 text-center small-centered columns mobile-nav">
-                <a href="#"><h2>Resum&egrave;</h2></a>
-            </div>
-        </div>
-        <div class="row ">
-            <div class="small-3 text-center small-centered columns mobile-nav">
-                <a href="#"><h2>Projects</h2></a>
-            </div>
-        </div>
-        <div class="row ">
-            <div class="small-3 text-center small-centered columns mobile-nav">
-                <a href="#"><h2>Blog</h2></a>
-            </div>
-        </div>
-        <div class="row ">
-            <div class="small-3 text-center small-centered columns mobile-nav">
-                <a href="#"><h2>Contact</h2></a>
-            </div>
-        </div>
+---
+layout: base
+
+projects:
+  #Types are "fa-home" for personal, "fa-briefcase" for work, and "fa-book" for school
+  - 
+    name: Halligan Helper
+    hash: halliganhelper
+    link: www.halliganhelper.com
+    description: This is a thing
+    types: 
+      - fa-home
+      - fa-book
+  - 
+    name: Facebook Cleanup
+    hash: facebookcleanup
+    link: 
+    description:
+    types:
+      - fa-home
+---
+
+<div id="ww">
+    <div class="container">
+        <div class="col-lg-8 col-lg-offset-2 centered">
+            <img class="circular" src="static/img/headshot.jpg" alt="Tyler Lubeck">
+            <h1>Hi, I'm Tyler!</h1> 
+            <p>I'm a student at the Tufts University School of Engineering, where I'll be graduating with a Bachelor of Science in May 2015. I'll be majoring in Computer Science, with a minor in Entrepreneurial Leadership.</p>
+            <p>I'm also a backend developer with a passion for Django, Python, and creating APIs. I particularly love creating apps that solve people's problems, and my pride and joy is <a href="halliganhelper.html">Halligan Helper</a>.</p>
+        </div> 
     </div>
-        <!-- Footer scripts -->    
-        <script src='/static/js/vendor/jquery.js'></script>
-        <script src='/static/js/foundation.min.js'></script>
-<!--        <script src='static/js/vendor/modernizr.js'></script> -->
-        <script>
-            $(document).foundation();
-        </script>
-    </body>
-</html>
+</div>

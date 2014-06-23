@@ -1,52 +1,47 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title> Tyler Lubeck </title>
-        <link rel='stylesheet' href='/static/stylesheets/normalize.css'/>
-        <link rel='stylesheet' href='/static/stylesheets/foundation.min.css'/>
-        <link rel='stylesheet' href='/static/stylesheets/mycss.css'/>
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <script src='/static/js/vendor/modernizr.js'></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Personal website for Tyler Lubeck">
+
+        <title>Tyler Lubeck</title>
+
+        <link href="static/css/bootstrap.css" rel="stylesheet">
+        <link href="static/css/main.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="static/js/hover.zoom.js"></script>
+        <script src="static/js/hover.zoom.conf.js"></script>
+
+        <!-- TODO: Add HTML5 shim -->
+
     </head>
     <body>
-        <!-- Nav bar -->
-        <div class="contain-to-grid">
-            <nav class="top-bar contain-to-grid" data-topbar>
-                <ul class="title-area">
-                    <li class="name"></li>
-                    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-                </ul>
-                <section class="top-bar-section">
-                    <ul class="left">
-                        <li class="divider"></li>
-                        <li><a href="/">Home</a></li>
-                        <li class="divider"></li>
-                        <li class="has-dropdown">
-                            <a href="projects.html">Projects</a>
-                            <ul class="dropdown">
-                                
-                                    <li> <a href="/projects.html#halliganhelper"> Halligan Helper </a></li>                          
-                                
-                                    <li> <a href="/projects.html#facebookcleanup"> Facebook Cleanup </a></li>                          
-                                
-                            </ul>
-                    <!--
-                            <ul class="dropdown">
-                                <li><a href="projects.html#HalliganHelper">Halligan Helper</a></li>
-                                <li><a href="projects.html#FacebookCleanup">Facebook Cleanup</a></li>
-                            </ul>
-                    -->
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="resume.html">Resum&egrave;</a></li>
-                        <li class="divider"></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li class="divider"></li>
-                    </ul>
-                </section>
-            </nav>
-        </div>
-        <!-- Body content goes here -->
+        <!-- navbar -->
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button> 
+                    <a class="navbar-brand" href="index.html">Tyler Lubeck</a>
+                </div> 
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="about.html">About</a></li> 
+                        <li><a href="projects.html">Projects</a></li> 
+                        <li><a href="resume.pdf" target="_blank">Resum&egrave;</a></li> 
+                        <li><a href="contact.html">Contact</a></li> 
+                    </ul> 
+                </div>
+            </div> 
+        </div> 
+
+        <!-- CONTENT -->
+
                 <!-- Body content goes here -->
         <div class="row">
             <div class="left">
@@ -130,12 +125,33 @@
 
 
 
-        <!-- Footer scripts -->    
-        <script src='/static/js/vendor/jquery.js'></script>
-        <script src='/static/js/foundation.min.js'></script>
-<!--        <script src='static/js/vendor/modernizr.js'></script> -->
-        <script>
-            $(document).foundation();
-        </script>
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>Contact Information</h4> 
+                        <p>
+                            E-Mail: <a href="mailto:tyler@tylerlubeck.com">tyler@tylerlubeck.com</a></br>
+                            Phone: <a href="tel:18134691499">1-813-469-1499</a>
+                        </p>
+                    </div> 
+                    <div class="col-lg-4">
+                        <h4>On The Web</h4> 
+                        <p>
+                        <span class="fa fa-github"></span>Github: <a href="http://www.github.com/TylerLubeck" target="_blank">TylerLubeck</a><br/>
+                        <span class="fa fa-twitter"></span>Twitter: <a href="http://www.twitter.com/TylerLubeck" target="_blank">@TylerLubeck</a><br/>
+                        <span class="fa fa-linkedin"></span>LinkedIn: <a href="http://www.linkedin.com/in/TylerLubeck" target="_blank">TylerLubeck</a> 
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4>Thanks</h4> 
+                        <p>
+                        Thanks to <a href="http://www.blacktie.co" target="_blank">BlackTie</a> for their <a href="http://www.blacktie.co/2014/01/stanley-freelancer-theme/" target="_blank">Stanley</a> theme!
+                        </p>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+        <script src="static/js/bootstrap.min.js"></script>
     </body>
 </html>

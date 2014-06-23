@@ -46,6 +46,14 @@ p {
     text-align: center;
 }
 
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
 /* Links */
 a {
     color: #00A0B0;

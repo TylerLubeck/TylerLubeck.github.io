@@ -261,6 +261,17 @@ bt {
     -moz-box-shadow: 0 0 8px rgba(255, 255, 255, .8);
 }
 
+.bigfa {
+    margin-right: 5px;
+    font-size: 40px;
+    color: #00A0B0;
+}
+
 span.fa {
+    margin-right: 5px;
+}
+
+.inline-image {
+    float: left;
     margin-right: 5px;
 }

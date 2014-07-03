@@ -253,6 +253,7 @@ bt {
     width: 300px;
     height: 300px;
     border-radius: 150px;
+    margin-bottom: 25px;
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
     background: url("/static/img/headshot.jpg") no-repeat center;

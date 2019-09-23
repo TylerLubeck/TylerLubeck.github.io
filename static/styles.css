@@ -1,0 +1,40 @@
+:root {
+    --bg-color: #1D2D44;
+    --secondary-highlight-color: #748CAB;
+    --text-color: #F0EBD8;
+}
+
+html {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    padding-top: 20px;
+}
+
+.headshot {
+    border-radius: 10%;
+}
+
+a {
+    /* color: white; */
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+i {
+    color: var(--secondary-highlight-color)
+    margin-right: 3px;
+}
+
+.line-item {
+    font-size: 110%;
+    line-height: 1.5em;
+}

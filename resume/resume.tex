@@ -65,6 +65,13 @@
 %%% Optionals
 \position{Software Engineer{\enskip\cdotp\enskip}Site Reliability Engineer}
 
+\usepackage{catchfile}
+\usepackage{xstring}
+\CatchFileDef{\HEAD}{../.git/refs/heads/master}{}
+\newcommand{\shortgitsha}{
+    \StrLeft{\HEAD}{7}
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Content
@@ -73,7 +80,7 @@
 \makecvfooter
   {\today}
   {Tyler Lubeck~~~·~~~Résumé}
-  {\thepage}
+  {\shortgitsha}
 
 \begin{document}
 %%% Make a header for CV with personal data

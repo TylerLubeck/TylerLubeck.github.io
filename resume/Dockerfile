@@ -9,6 +9,7 @@ RUN apt-get update \
     && tlmgr install xetex \
     && fmtutil-sys --all
 RUN tlmgr install \
+    catchfile \
     enumitem \
     environ \
     etoolbox \
@@ -29,7 +30,8 @@ RUN tlmgr install \
     tcolorbox \
     unicode-math \
     xcolor \
-    xifthen
+    xifthen \
+    xstring
 
 WORKDIR /app
 

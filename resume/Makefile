@@ -4,12 +4,9 @@ OUTPUT_NAME=tylerlubeck-resume
 
 
 resume: $(OUTPUT_NAME).pdf
-$(OUTPUT_NAME).pdf: build
+$(OUTPUT_NAME).pdf: resume.tex sections/education.tex sections/experience.tex sections/publication.tex
 	# https://tex.stackexchange.com/a/274181
 	xelatex -jobname $(OUTPUT_NAME) resume.tex
-
-build:
-	mkdir build
 
 clean:
 	rm -f *.log *.out *.aux

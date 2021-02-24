@@ -1,12 +1,11 @@
-OUTPUT_NAME=tylerlubeck-resume
 BUILD_IMAGE_NAME=resumebuildimage
+OUTPUT_NAME=tylerlubeck-resume
 
-.PHONY: clean resume
+.PHONY: buildimage clean resume
 
-
-resume: $(OUTPUT_NAME).pdf buildimage
-$(OUTPUT_NAME).pdf: resume.tex sections/education.tex sections/experience.tex sections/publication.tex
-	docker run -v $(PWD):/app $(BUILD_IMAGE_NAME) xelatex -jobname $(OUTPUT_NAME) resume.tex
+resume: buildimage $(OUTPUT_NAME).pdf
+$(OUTPUT_NAME).pdf: resume.tex $(shell find sections)
+	docker run -v $(PWD)/..:/app --workdir /app/resume $(BUILD_IMAGE_NAME) xelatex --jobname $(OUTPUT_NAME) resume.tex
 
 buildimage: Dockerfile
 	docker build -f Dockerfile -t $(BUILD_IMAGE_NAME) .

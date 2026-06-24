@@ -24,14 +24,37 @@ html {
 }
 
 a {
-    /* color: white; */
     text-decoration: none;
     color: var(--text-color);
 }
 
-i {
-    color: var(--secondary-highlight-color)
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
     margin-right: 3px;
+    vertical-align: -0.125em;
+
+    background-color: var(--text-color);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+}
+
+.icon-linkedin {
+    mask-image: url(linkedin.svg);
+}
+
+.icon-github {
+    mask-image: url(github-square.svg);
+}
+
+.icon-file {
+    mask-image: url(file-alt.svg);
+}
+
+.icon-envelope {
+    mask-image: url(envelope.svg);
 }
 
 .line-item {

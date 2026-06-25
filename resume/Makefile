@@ -3,7 +3,7 @@ OUT = tylerlubeck-resume.pdf
 
 .PHONY: clean preview
 
-$(OUT): $(SRC)
+$(OUT): $(SRC) metadata.toml
 	typst compile resume.typ $(OUT)
 
 preview:

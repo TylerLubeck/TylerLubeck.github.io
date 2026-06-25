@@ -7,7 +7,7 @@
 # the fields that differ.
 
 # Italic tagline displayed below your name and contact info
-header_quote = "Site and Data Reliability Engineer"
+#header_quote = ""
 
 # Text shown in the left side of the footer on CV pages
 cv_footer = ""
@@ -88,7 +88,16 @@ letter_footer = ""
     # custom_ai_prompt_text = "Custom prompt text here..."  # Uncomment to add a custom ATS prompt string
 
     # Hidden keywords injected into PDF metadata for ATS keyword matching (invisible to readers)
-    injected_keywords_list = ["GCP", "AWS", "BigQuery", "SRE", "Site Reliability"]
+    injected_keywords_list = [
+        "GCP",
+        "AWS",
+        "BigQuery",
+        "SRE",
+        "Site Reliability",
+        "SLO",
+        "Service Level Objective",
+        "Teamwork",
+    ]
 
 [personal]
     # Your first name, displayed in the header
@@ -107,21 +116,13 @@ letter_footer = ""
     # custom-cert). Descriptive names keep `custom-icons:` mapping in cv.typ readable.
     [personal.info]
         # Shown as clickable icon in header; auto-links to github.com/<value>
-# github = "tylerlubeck"
+        github = "tylerlubeck"
         # Shown as phone icon in header; displayed as-is with a tel: link
-#phone = "+1 (813) 469-1499"
+#phone = ""
         # Shown as envelope icon in header; auto-links to mailto:<value>
         email = "tyler@tylerlubeck.com"
         # Shown as clickable icon in header; auto-links to linkedin.com/in/<value>
         linkedin = "tylerlubeck"
-        # Shown as clickable icon in header; auto-links to gitlab.com/<value>
-#gitlab = "yunanwg"
-        # Shown as clickable globe icon in header; auto-links to https://<value>
-#homepage = "www.tylerlubeck.com"
-        # Shown as ORCID icon in header; auto-links to orcid.org/<value>
-#orcid = "0000-0000-0000-0000"
-        # researchgate = "John-Doe"  # Shown as a clickable ResearchGate icon in header
-        # Shown as map-marker icon in header; displayed as plain text (no link)
         location = "Denver, CO"
         # extraInfo = "Available for remote work"  # Shown as extra text with an info icon in header
         # Insert a line break in the header info, splitting icons across two lines

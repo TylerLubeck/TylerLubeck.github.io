@@ -1,0 +1,60 @@
+name: Test
+permissions:
+  contents: read
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# CI runs the test suite inside the same Docker image used locally
+# (tests/Dockerfile). One source of truth for typst / tytanic / typstyle
+# versions and font installation, so refs are pixel-deterministic across
+# the maintainer's Apple Silicon Mac and CI Linux.
+#
+# Architecture: arm64 native on both sides. Cross-arch (x86 image via
+# Rosetta on Apple Silicon, or vice versa) drifts FreeType pixels;
+# see tests/Dockerfile header for the rationale.
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04-arm
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Buildx (for layer cache)
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build test image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: tests/Dockerfile
+          tags: brilliant-cv-test
+          load: true
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Run tytanic + panic suite
+        run: |
+          docker run --rm \
+            -v "$PWD:/workspace" \
+            brilliant-cv-test \
+            bash -c "tt run --no-fail-fast && bash tests/panics/run.sh"
+
+      - name: Format check (typstyle)
+        run: |
+          docker run --rm \
+            -v "$PWD:/workspace" \
+            brilliant-cv-test \
+            typstyle --check src template tests
+
+      - name: Upload diff PNGs on test failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tytanic-diffs
+          path: |
+            tests/**/diff/*.png
+            tests/**/out/*.png

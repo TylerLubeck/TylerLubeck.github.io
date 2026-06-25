@@ -23,7 +23,7 @@
 
 #cv-entry-continued(
   title: [Site Reliability Engineer IV, Data Engineering],
-  date: [Sep 2022 - Nov 2024],
+  date: [Jan 2023 - Nov 2024],
   description: list(
     [Automated migration from DynamoDB to Cassandra, reducing latency and costs],
     [Managed Airflow deployments for multiple teams, including transition from EC2 to Kubernetes based workers, running several thousand concurrent tasks across multiple airflow clusters],
@@ -34,7 +34,7 @@
 
 #cv-entry-continued(
   title: [Site Reliability Engineer III],
-  date: [May 2021 - Sep 2022],
+  date: [May 2021 - Jan 2023],
   description: list(
     [Cleaned up stale cloud resources, roles, and datasets to reduce configuration drift, lower operational risk, and keep infrastructure ownership clear],
     [Improved service reliability by adding and refining recording rules, metrics, and other observability primitives used for incident detection and debugging],

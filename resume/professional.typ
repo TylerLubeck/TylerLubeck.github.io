@@ -16,7 +16,8 @@
   description: list(
     [Designed and implemented Data Developer Portal allowing users to find the correct data to use and how to get access to it. Reduced accidental duplication of data by 10%],
     [Data Lineage implementation across the warehouse, allowing for computed access grants and automatic rerunning of data pipelines after incidents],
-    [Developed kubernetes-based controllers to manage assets within the data warehouse, eliminating terraform-related configuration drift. Reduced turnaround time for data creation by several hours.],
+    [Developed kubernetes-based controllers to manage assets within the data warehouse, eliminating terraform-related configuration drift. Reduced turnaround time for data creation by several hours],
+    [Worked between Security, Data Science, Machine Learning, and Infrastructure teams to build an access request policy that balanced security and developer velocity requirements],
   ),
 )
 
@@ -26,7 +27,8 @@
   description: list(
     [Automated migration from DynamoDB to Cassandra, reducing latency and costs],
     [Managed Airflow deployments for multiple teams, including transition from EC2 to Kubernetes based workers, running several thousand concurrent tasks across multiple airflow clusters],
-    [Ran Global Incident Response, along with trainings and readouts, for most Reddit incidents],
+    [Defined SLOs for Airflow infrastructure, and worked with engineers across the org to ensure their DAGs were resilient to infrastructure outages],
+    [Ran Global Incident Response, along with trainings and postmortems, for most Reddit incidents],
   ),
 )
 
@@ -34,10 +36,10 @@
   title: [Site Reliability Engineer III],
   date: [May 2021 - Sep 2022],
   description: list(
-    [Cleaned up stale cloud resources, roles, and datasets to reduce configuration drift, lower operational risk, and keep infrastructure ownership clear.],
-    [Improved service reliability by adding and refining recording rules, metrics, and other observability primitives used for incident detection and debugging.],
-    [Tightened IAM and Terraform-managed boundaries around shared infrastructure so teams could operate their own resources with less manual intervention.],
-    [Built and maintained internal tooling and runbooks to make on-call response, access management, and platform operations more repeatable and auditable.],
+    [Cleaned up stale cloud resources, roles, and datasets to reduce configuration drift, lower operational risk, and keep infrastructure ownership clear],
+    [Improved service reliability by adding and refining recording rules, metrics, and other observability primitives used for incident detection and debugging],
+    [Tightened IAM and Terraform-managed boundaries around shared infrastructure so teams could operate their own resources with less manual intervention],
+    [Built and maintained internal tooling and runbooks to make on-call response, access management, and platform operations more repeatable and auditable],
   ),
 )
 

@@ -592,6 +592,15 @@
     _create-entry-tag-list(tags, styles.tag)
   } else if entry-type == "start" {
     // Entry start layout (original cv-entry-start logic)
+    // An optional overall date renders inline, immediately after the society,
+    // mirroring how the full entry places a date next to its title.
+    let society-cell = {
+      (styles.a1)(society)
+      if date != none and date != "" {
+        h(0.75em)
+        (styles.date-inline)((styles.dates)(date))
+      }
+    }
     if display-logo and logo != "" {
       // With logo: 3-column layout
       table(
@@ -604,7 +613,7 @@
           set image(width: 100%)
           logo
         },
-        (styles.a1)(society),
+        society-cell,
         (styles.a2)(location),
       )
     } else {
@@ -615,7 +624,7 @@
         stroke: 0pt,
         gutter: 6pt,
         align: horizon,
-        (styles.a1)(society), (styles.a2)(location),
+        society-cell, (styles.a2)(location),
       )
     }
     // With a logo, the image's natural row height pads the gap, so a more
@@ -739,6 +748,9 @@
 /// *Requires* `display_entry_society_first = true` in `metadata.toml`.
 ///
 /// - society (str): The society of the entry (company, university, etc.).
+/// - date (str | content): (optional) An overall date for the society, spanning
+///   all of its roles. Rendered inline next to the society. If `none` or empty,
+///   no date is displayed.
 /// - location (str): The location of the entry.
 /// - logo (image): The logo of the society. If empty, no logo will be displayed.
 /// - metadata (array): (optional) the metadata read from the TOML file.
@@ -749,6 +761,7 @@
 /// #block(width: 300pt)[
 ///   #cv-entry-start(
 ///     society: [XYZ Corporation],
+///     date: [2017 - 2020],
 ///     location: [San Francisco, CA],
 ///     metadata: _metadata,
 ///   )
@@ -765,6 +778,7 @@
 /// -> content
 #let cv-entry-start(
   society: "Society",
+  date: none,
   location: "Location",
   logo: "",
   color: none,
@@ -782,6 +796,7 @@
     "start",
     params,
     society: society,
+    date: date,
     location: location,
     logo: logo,
     metadata: metadata,

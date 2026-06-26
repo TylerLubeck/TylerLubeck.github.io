@@ -116,7 +116,7 @@ letter_footer = ""
     # custom-cert). Descriptive names keep `custom-icons:` mapping in cv.typ readable.
     [personal.info]
         # Shown as clickable icon in header; auto-links to github.com/<value>
-        github = "tylerlubeck"
+#github = "tylerlubeck"
         # Shown as phone icon in header; displayed as-is with a tel: link
 #phone = ""
         # Shown as envelope icon in header; auto-links to mailto:<value>

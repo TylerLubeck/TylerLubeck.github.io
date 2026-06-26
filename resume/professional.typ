@@ -6,6 +6,7 @@
 
 #cv-entry-start(
   society: [Reddit],
+  date: [May 2021 - Present],
   location: [],
   //location: [Remote],
 )
@@ -14,7 +15,7 @@
   title: [Data Reliability Engineer IV],
   date: [Nov 2024 - Present],
   description: list(
-    [Designed and implemented Data Developer Portal allowing users to find the correct data to use and how to get access to it. Reduced accidental duplication of data by 10%],
+    [Designed and implemented Data Developer Portal enabling internal users to find data and how to access it. This reduced accidental data duplication by 10%],
     [Data Lineage implementation across the warehouse, allowing for computed access grants and automatic rerunning of data pipelines after incidents],
     [Developed kubernetes-based controllers to manage assets within the data warehouse, eliminating terraform-related configuration drift. Reduced turnaround time for data creation by several hours],
     [Worked between Security, Data Science, Machine Learning, and Infrastructure teams to build an access request policy that balanced security and developer velocity requirements],
@@ -61,6 +62,7 @@
 
 #cv-entry-start(
   society: [SurveyMonkey],
+  date: [Aug 2015 - Nov 2019],
   location: [],
   //location: [San Mateo, CA],
 )
